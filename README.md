@@ -5,7 +5,9 @@ docker build -t devenv .
 
 
 # start
-docker run -dp 8888:8888 --name notebook devenv
+docker run -d -p 8888:8888 --name notebook  \
+    -v /notebooks -v ~/playground/kwant:/kwant \
+    devenv
 
 
 
