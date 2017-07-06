@@ -10,7 +10,7 @@ start development container with:
 
 ```bash
 docker pull rafalskolasinski/devenv:latest
-docker run --rm -d -p 8888:8888 --name dev -v ~/projects/kwant:/kwant rafalskolasinski/devenv
+docker run -d -p 8888:8888 --name dev -v ~/projects/kwant:/kwant rafalskolasinski/devenv
 ```
 
 This will start a ``Jupyter Notebook`` server running at your ``localhost:8888``.
@@ -20,6 +20,9 @@ You can use it to play with your changes, after you build and test them with
 docker exec dev build
 docker exec dev test
 ```
+
+Note: if you add ``--rm`` to the ``docker run`` command then container will be
+removed when stopped.
 
 
 # Persistent notebook folder
