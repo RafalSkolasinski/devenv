@@ -9,7 +9,7 @@ Assuming that you keep your Kwant sources in `` ~/projects/kwant`` you can
 start development container with:
 
 ```bash
-docker pull rafalskolasinski/devenv:latest
+docker pull rafalskolasinski/kwant-devenv:latest
 docker run -d -p 8888:8888 --name dev -v ~/projects/kwant:/kwant rafalskolasinski/kwant-devenv
 ```
 
@@ -52,5 +52,5 @@ git clean -fxd .
 ```bash
 docker kill dev
 docker rm dev
-docker rmi rafalskolasinski/devenv
+docker rmi rafalskolasinski/kwant-devenv
 ```
