@@ -39,7 +39,7 @@ CMD ["start.sh", "/opt/notebook.sh"]
 
 
 # Add files in the end to make most use of cache
-ADD start.sh /usr/local/bin/
-ADD build.sh /opt/bin/build
-ADD test.sh /opt/bin/test
-ADD notebook.sh /opt/
+ADD scripts/start.sh /usr/local/bin/
+ADD scripts/build.sh /opt/bin/build
+ADD scripts/test.sh /opt/bin/test
+ADD scripts/notebook.sh /opt/
