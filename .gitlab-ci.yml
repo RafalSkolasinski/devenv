@@ -6,7 +6,7 @@ mirror repository:
     stage: mirror
     allow_failure: true
     variables:
-      REPO: "git@github.com:RafalSkolasinski/devenv.git"
+      REPO: "git@github.com:RafalSkolasinski/kwant-devenv.git"
     before_script:
       - mkdir ~/.ssh && chmod 700 ~/.ssh
       - ssh-keyscan github.com >> ~/.ssh/known_hosts
