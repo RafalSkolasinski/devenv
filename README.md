@@ -54,3 +54,8 @@ docker kill dev
 docker rm dev
 docker rmi rafalskolasinski/kwant-devenv
 ```
+
+
+
+# Warning
+Be aware that ``jupyter notebook`` in this container runs without token.
