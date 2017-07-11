@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /kwant
+cd /src
 start.sh py.test

@@ -26,11 +26,11 @@ ENV PATH="/opt/bin:${PATH}"
 ENV NB_USER developer
 ENV NB_UID 1000
 RUN useradd -m -s /bin/bash -N -u $NB_UID $NB_USER
-RUN mkdir /notebooks /kwant && chown -R $NB_UID:users /notebooks /kwant
+RUN mkdir /notebooks /src && chown -R $NB_UID:users /notebooks /src
 
 
 # Configure container startup
-VOLUME /notebooks /kwant
+VOLUME /notebooks /src
 WORKDIR /notebooks
 EXPOSE 8888
 

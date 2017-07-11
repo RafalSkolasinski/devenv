@@ -10,7 +10,7 @@ start development container with:
 
 ```bash
 docker pull rafalskolasinski/kwant-devenv:latest
-docker run -d -p 8888:8888 --name dev -v ~/projects/kwant:/kwant rafalskolasinski/kwant-devenv
+docker run -d -p 8888:8888 --name dev -v ~/projects/kwant:/src rafalskolasinski/kwant-devenv
 ```
 
 This will start a ``Jupyter Notebook`` server running at your ``localhost:8888``.
@@ -33,7 +33,7 @@ You can add binding to your local folder by adding
 
 
 # Building and testing
-Building is done in ``/kwant`` and affects your mounted directory.
+Building is done in ``/src`` and affects your mounted directory.
 You can instantly test your code by running
 ```bash
 docker exec dev build
