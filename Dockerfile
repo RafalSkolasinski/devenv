@@ -43,3 +43,5 @@ ADD scripts/start.sh /usr/local/bin/
 ADD scripts/build.sh /opt/bin/build
 ADD scripts/test.sh /opt/bin/test
 ADD scripts/notebook.sh /opt/
+
+ADD VERSION /
