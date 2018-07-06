@@ -13,9 +13,7 @@ RUN wget --quiet https://github.com/krallin/tini/releases/download/v0.10.0/tini 
 
 
 # setup jupyter notebook
-RUN pip3 install \
-    notebook==5.0.0 \
-    sympy==1.0
+RUN pip3 install notebook sympy
 
 
 # add /opt/bin to the PATH
