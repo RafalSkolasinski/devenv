@@ -1,3 +1,15 @@
+# Deprecation notice
+
+This is depracted. I do not guarantee that it will still work.
+See my [science-docker](https://gitlab.kwant-project.org/qt/r-j-skolasinski/science-docker) repository for currently supported solution.
+
+
+
+
+
+
+
+
 # Motivation
 Despite the fact that setting development environment for Kwant using
 ``virtualenv`` or ``conda`` is relatively easy task it quickly start to
